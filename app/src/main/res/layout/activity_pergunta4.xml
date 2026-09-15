@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="409dp"
+        android:layout_height="729dp">
+        <TextView
+            android:textSize="24sp"
+            android:gravity="center"
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pergunta 4"/>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="317dp"
+            app:srcCompat="@drawable/china"/>
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que país é esse?"/>
+        <RadioGroup
+            android:id="@+id/rgpAlternativas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/rgbOpcao1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Japão "/>
+            <RadioButton
+                android:id="@+id/rgbOpcao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inglaterra"/>
+            <RadioButton
+                android:id="@+id/rgbOpcao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brasil"/>
+            <RadioButton
+                android:id="@+id/rgbOpcao4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Argentina"/>
+            <Button
+                android:enabled="false"
+                android:id="@+id/btnResponder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Responder"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
