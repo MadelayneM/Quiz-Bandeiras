@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FDF4"
+    tools:context=".Ranking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="Ranking"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Nome do usuário -->
+        <EditText
+            android:id="@+id/txtNomeUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Nome do usuário"
+            android:textSize="18sp" />
+
+        <!-- Acertos + Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAcertos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Acertos:"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPontuacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- BOTÕES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnResponderNovamente"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="Responder novamente"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnTelaPrincipal"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="Tela principal"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

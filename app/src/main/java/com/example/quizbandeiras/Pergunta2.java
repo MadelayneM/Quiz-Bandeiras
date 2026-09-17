@@ -46,6 +46,8 @@ public class Pergunta2 extends AppCompatActivity {
                 // Se checkedId for diferente de -1, significa que alguma opção foi marcada
                 if (checkedId != -1) {
                     btnResponder.setEnabled(true);
+                    // Alteração de ciza para verde
+                    btnResponder.setBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.rgb(76, 175, 80)));
                 } else {
                     btnResponder.setEnabled(false);
                 }

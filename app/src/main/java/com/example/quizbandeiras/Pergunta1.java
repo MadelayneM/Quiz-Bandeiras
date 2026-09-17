@@ -40,7 +40,9 @@ public class Pergunta1 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // Se checkedId for diferente de -1, significa que alguma opção foi marcada
                 if (checkedId != -1) {
+                    // Alteração: deixa o botão verde após selecionar uma opção
                     btnResponder.setEnabled(true);
+                    btnResponder.setBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.rgb(76, 175, 80)));
                 } else {
                     btnResponder.setEnabled(false);
                 }

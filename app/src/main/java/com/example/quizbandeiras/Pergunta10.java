@@ -46,6 +46,7 @@ public class Pergunta10 extends AppCompatActivity {
                 // Se checkedId for diferente de -1, significa que alguma opção foi marcada
                 if (checkedId != -1) {
                     btnResponder.setEnabled(true);
+
                 } else {
                     btnResponder.setEnabled(false);
                 }

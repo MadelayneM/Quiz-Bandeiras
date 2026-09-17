@@ -5,30 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0FDF4"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="409dp"
-        android:layout_height="729dp">
+        android:layout_height="729dp"
+        android:orientation="vertical">
+
         <TextView
-            android:textSize="20sp"
-            android:textColor="#f4ebeb"
-            android:gravity="center"
-            android:id="@+id/textView3"
-            android:background="#4caf50"
+            android:id="@+id/txtTituloHeader"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quiz Bandeiras"
-            android:width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#4CAF50"
             android:fontFamily="sans-serif-black"
-            android:backgroundTint="#4caf50"/>
-        <LinearLayout
             android:gravity="center"
-            android:orientation="horizontal"
+            android:text="Quiz Bandeiras"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp">
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imgLucas"
@@ -36,98 +40,111 @@
                 android:layout_height="100dp"
                 android:layout_gravity="left"
                 app:srcCompat="@drawable/adicionar_usuario" />
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="204dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <TextView
-                    android:textSize="20sp"
-                    android:gravity="left"
                     android:id="@+id/txtNome1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="25dp"
-                    android:text="Lucas Fonseca Shiraoka "
-                    android:layout_marginStart="25dp"/>
-                <TextView
-                    android:textSize="20sp"
                     android:gravity="left"
+                    android:text="Lucas Fonseca Shiraoka "
+                    android:textSize="20sp" />
+
+                <TextView
                     android:id="@+id/txtRGM1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:gravity="left"
                     android:text="RGM:37344471"
-                    android:layout_marginStart="25dp"/>
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:gravity="center"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/imgMadelayne"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/mulher"/>
+                app:srcCompat="@drawable/mulher" />
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <TextView
-                    android:textSize="20sp"
-                    android:gravity="left"
                     android:id="@+id/txtNome2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="25dp"
-                    android:text="Madelayne Mendoza Huanca "
-                    android:layout_marginStart="25dp"/>
-                <TextView
-                    android:textSize="20sp"
                     android:gravity="left"
+                    android:text="Madelayne Mendoza Huanca "
+                    android:textSize="20sp" />
+
+                <TextView
                     android:id="@+id/txtRGM2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:gravity="left"
                     android:text="RGM:44386885"
-                    android:layout_marginStart="25dp"/>
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <EditText
-                android:gravity="center"
                 android:id="@+id/edtNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:hint="Digite seu nome:"
                 android:ems="10"
-                android:inputType="text"/>
+                android:gravity="center"
+                android:hint="Digite seu nome:"
+                android:inputType="text" />
+
             <LinearLayout
-                android:gravity="bottom"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
                 <Button
-                    android:enabled="false"
-                    android:textColorLink="#4caf50"
                     android:id="@+id/btnIniciar"
                     android:layout_width="185dp"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:enabled="false"
                     android:text="Iniciar"
-                    android:backgroundTint="#4caf50"/>
+                    android:textColorLink="#4caf50" />
+
                 <Button
                     android:id="@+id/btnFinalizar"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="Finalizar"
                     android:layout_marginStart="10dp"
-                    android:backgroundTint="#4caf50"/>
+                    android:backgroundTint="#4caf50"
+                    android:text="Finalizar" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

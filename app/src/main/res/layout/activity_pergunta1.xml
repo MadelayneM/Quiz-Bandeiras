@@ -5,62 +5,90 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0FDF4"
     tools:context=".Pergunta1">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="409dp"
-        android:layout_height="729dp">
+        android:layout_height="729dp"
+        android:orientation="vertical">
+
         <TextView
-            android:textSize="24sp"
-            android:gravity="center"
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pergunta 1"/>
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="Pergunta 1"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="317dp"
             app:srcCompat="@drawable/brasil" />
+
         <TextView
-            android:textSize="24sp"
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Que país é esse?"/>
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Que país é esse?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <RadioGroup
             android:id="@+id/rgpAlternativas"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <RadioButton
                 android:id="@+id/rgbOpcao1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Japão "/>
+                android:text="Japão "
+                android:textColor="@android:color/black" />
+
             <RadioButton
                 android:id="@+id/rgbOpcao2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Inglaterra"/>
+                android:text="Inglaterra"
+                android:textColor="@android:color/black" />
+
             <RadioButton
                 android:id="@+id/rgbOpcao3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Brasil"/>
+                android:text="Brasil"
+                android:textColor="@android:color/black" />
+
             <RadioButton
                 android:id="@+id/rgbOpcao4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Argentina"/>
+                android:text="Argentina"
+                android:textColor="@android:color/black" />
+
             <Button
-                android:enabled="false"
                 android:id="@+id/btnResponder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Responder"/>
+                android:backgroundTint="#9E9E9E"
+                android:enabled="false"
+                android:text="Responder"
+                android:textColor="@android:color/white" />
+
         </RadioGroup>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
