@@ -46,6 +46,8 @@ public class Pergunta10 extends AppCompatActivity {
                 // Se checkedId for diferente de -1, significa que alguma opção foi marcada
                 if (checkedId != -1) {
                     btnResponder.setEnabled(true);
+                    //Alteração de cinza para verde
+                    btnResponder.setBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.rgb(76, 175, 80)));
 
                 } else {
                     btnResponder.setEnabled(false);
@@ -54,10 +56,11 @@ public class Pergunta10 extends AppCompatActivity {
         });
 
         btnResponder.setOnClickListener(v -> {
-            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
-            acertosAtuais = Alternativas.calcularPontuacao(rgpAlternativas, R.id.rgbOpcao3, acertosAtuais);
+            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao2);
+            acertosAtuais = Alternativas.calcularPontuacao(acertou, acertosAtuais);
 
-            Intent intent = new Intent(Pergunta10.this, MainActivity.class);
+
+            Intent intent = new Intent(Pergunta10.this, Ranking.class);
             intent.putExtra("TOTAL_ACERTOS", acertosAtuais);
             intent.putExtra("RESPOSTA_ANTERIOR_CORRETA", acertou);
             startActivity(intent);

@@ -3,6 +3,7 @@ package com.example.quizbandeiras;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -13,6 +14,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Pergunta5 extends AppCompatActivity {
+    private EditText edtNome;
+
     private int acertosAtuais;
     private Button btnResponder;
     private RadioGroup rgpAlternativas;
@@ -55,8 +58,8 @@ public class Pergunta5 extends AppCompatActivity {
         });
 
         btnResponder.setOnClickListener(v -> {
-            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
-            acertosAtuais = Alternativas.calcularPontuacao(rgpAlternativas, R.id.rgbOpcao3, acertosAtuais);
+            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao4);
+            acertosAtuais = Alternativas.calcularPontuacao(acertou, acertosAtuais);
 
             Intent intent = new Intent(Pergunta5.this, Pergunta6.class);
             intent.putExtra("TOTAL_ACERTOS", acertosAtuais);

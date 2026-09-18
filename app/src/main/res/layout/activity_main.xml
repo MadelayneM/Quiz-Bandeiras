@@ -55,6 +55,7 @@
                     android:layout_marginTop="25dp"
                     android:gravity="left"
                     android:text="Lucas Fonseca Shiraoka "
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
@@ -64,6 +65,7 @@
                     android:layout_marginStart="25dp"
                     android:gravity="left"
                     android:text="RGM:37344471"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
@@ -95,6 +97,7 @@
                     android:layout_marginTop="25dp"
                     android:gravity="left"
                     android:text="Madelayne Mendoza Huanca "
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
@@ -104,6 +107,7 @@
                     android:layout_marginStart="25dp"
                     android:gravity="left"
                     android:text="RGM:44386885"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
@@ -121,7 +125,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Digite seu nome:"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColor="@color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"

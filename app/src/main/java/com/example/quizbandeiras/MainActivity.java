@@ -63,8 +63,10 @@ public class MainActivity extends AppCompatActivity {
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Pergunta1.class);
-                startActivity(it);
+
+                Intent intent = new Intent(MainActivity.this, Pergunta1.class);
+                SessaoUsuario.getInstance().setNomeUsuario(edtNome.getText().toString());
+                startActivity(intent);
 
             }
         });

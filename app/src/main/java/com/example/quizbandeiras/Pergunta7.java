@@ -55,8 +55,8 @@ public class Pergunta7 extends AppCompatActivity {
         });
 
         btnResponder.setOnClickListener(v -> {
-            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
-            acertosAtuais = Alternativas.calcularPontuacao(rgpAlternativas, R.id.rgbOpcao3, acertosAtuais);
+            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao1);
+            acertosAtuais = Alternativas.calcularPontuacao(acertou, acertosAtuais);
 
             Intent intent = new Intent(Pergunta7.this, Pergunta8.class);
             intent.putExtra("TOTAL_ACERTOS", acertosAtuais);

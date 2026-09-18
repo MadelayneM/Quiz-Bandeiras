@@ -32,8 +32,6 @@ public class Pergunta1 extends AppCompatActivity {
         rgpAlternativas =  findViewById(R.id.rgpAlternativas);
         btnResponder =  findViewById(R.id.btnResponder);
 
-        boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
-
 
         rgpAlternativas.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -50,7 +48,8 @@ public class Pergunta1 extends AppCompatActivity {
         });
 
         btnResponder.setOnClickListener(v -> {
-            acertosAtuais = Alternativas.calcularPontuacao(rgpAlternativas, R.id.rgbOpcao3, acertosAtuais);
+            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
+            acertosAtuais = Alternativas.calcularPontuacao(acertou, acertosAtuais);
 
             Intent intent = new Intent(Pergunta1.this, Pergunta2.class);
             intent.putExtra("TOTAL_ACERTOS", acertosAtuais);

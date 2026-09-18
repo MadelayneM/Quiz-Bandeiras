@@ -6,19 +6,11 @@ public class Alternativas {
     public static boolean isRespostaCorreta(RadioGroup radioGroup, int idRadioButtonCorreto) {
         int idSelecionado = radioGroup.getCheckedRadioButtonId();
 
-        // Se o usuário não marcou nada, retorna falso
-        if (idSelecionado == -1) {
-            return false;
-        }
-
         return idSelecionado == idRadioButtonCorreto;
     }
 
 
-    public static int calcularPontuacao(RadioGroup radioGroup, int idRadioButtonCorreto, int pontuacaoAtual) {
-        if (isRespostaCorreta(radioGroup, idRadioButtonCorreto)) {
-            return pontuacaoAtual + 1;
-        }
-        return pontuacaoAtual;
+    public static int calcularPontuacao(boolean acertou, int pontuacaoAtual) {
+        return acertou ? pontuacaoAtual + 1 : pontuacaoAtual;
     }
 }

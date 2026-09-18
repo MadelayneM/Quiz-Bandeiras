@@ -56,10 +56,10 @@ public class Pergunta9 extends AppCompatActivity {
         });
 
         btnResponder.setOnClickListener(v -> {
-            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao3);
-            acertosAtuais = Alternativas.calcularPontuacao(rgpAlternativas, R.id.rgbOpcao3, acertosAtuais);
+            boolean acertou = Alternativas.isRespostaCorreta(rgpAlternativas, R.id.rgbOpcao2);
+            acertosAtuais = Alternativas.calcularPontuacao(acertou, acertosAtuais);
 
-            Intent intent = new Intent(Pergunta9.this, Pergunta9.class);
+            Intent intent = new Intent(Pergunta9.this, Pergunta10.class);
             intent.putExtra("TOTAL_ACERTOS", acertosAtuais);
             intent.putExtra("RESPOSTA_ANTERIOR_CORRETA", acertou);
             startActivity(intent);
