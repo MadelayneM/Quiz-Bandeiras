@@ -39,7 +39,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="left"
-                app:srcCompat="@drawable/adicionar_usuario" />
+                app:srcCompat="@drawable/mikey" />
 
             <LinearLayout
                 android:layout_width="204dp"
@@ -81,7 +81,7 @@
                 android:id="@+id/imgMadelayne"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/mulher" />
+                app:srcCompat="@drawable/gatinha" />
 
             <LinearLayout
                 android:layout_width="match_parent"
