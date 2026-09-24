@@ -81,7 +81,7 @@
                 android:id="@+id/imgMadelayne"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/gatinha" />
+                app:srcCompat="@drawable/gato" />
 
             <LinearLayout
                 android:layout_width="match_parent"
