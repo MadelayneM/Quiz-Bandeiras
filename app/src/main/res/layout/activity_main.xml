@@ -9,9 +9,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/txtTituloHeader"
@@ -121,7 +123,7 @@
                 android:id="@+id/edtNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="30dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Digite seu nome:"
@@ -132,25 +134,33 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="bottom"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btnIniciar"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#4caf50"
-                    android:enabled="false"
-                    android:text="Iniciar"
-                    android:textColorLink="#4caf50" />
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Iniciar Quiz"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/btnFinalizar"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:backgroundTint="#4caf50"
-                    android:text="Finalizar" />
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Sair"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
