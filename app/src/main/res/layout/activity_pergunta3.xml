@@ -54,25 +54,33 @@
                 android:id="@+id/rgbOpcao1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Japão " />
+                android:text="Japão "
+                android:textColor="#070606"
+                android:textColorLink="#000000" />
 
             <RadioButton
                 android:id="@+id/rgbOpcao2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="China" />
+                android:text="China"
+                android:textColor="#070606"
+                android:textColorLink="#000000" />
 
             <RadioButton
                 android:id="@+id/rgbOpcao3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Argélia" />
+                android:text="Argélia"
+                android:textColor="#070606"
+                android:textColorLink="#000000" />
 
             <RadioButton
                 android:id="@+id/rgbOpcao4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Egito" />
+                android:text="Egito"
+                android:textColor="#070606"
+                android:textColorLink="#000000" />
 
             <Button
                 android:id="@+id/btnResponder"

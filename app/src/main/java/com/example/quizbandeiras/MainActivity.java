@@ -60,14 +60,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // No onClick do btnIniciar:
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, Pergunta1.class);
-                SessaoUsuario.getInstance().setNomeUsuario(edtNome.getText().toString());
+                SessaoUsuario.getInstance().setNomeUsuarioAtual(edtNome.getText().toString());
                 startActivity(intent);
-
             }
         });
 

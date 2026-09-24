@@ -21,59 +21,26 @@
             android:layout_height="48dp"
             android:background="#4CAF50"
             android:gravity="center"
-            android:text="Ranking"
+            android:text="Ranking Geral"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- Nome do usuário -->
-        <EditText
-            android:id="@+id/txtNomeUsuario"
+        <!-- Lista de Jogadores e Pontuações -->
+        <ListView
+            android:id="@+id/listViewRanking"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:enabled="false"
-            android:gravity="center"
-            android:hint="Nome do usuário"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <!-- Acertos + Total -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/txtAcertos"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Acertos:"
-                android:textColor="@color/black"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txtPontuacao"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:divider="#4CAF50"
+            android:dividerHeight="1dp" />
 
         <!-- BOTÕES -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:orientation="horizontal">
 
